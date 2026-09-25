@@ -1,23 +1,40 @@
-- README.md
+# What is the Compliments App?
 
-- Omschrijving van de repository (project);
-dit is een complimenten generator
-- Oplijsting van aanwezige bestanden en folders;
-LICENSE
-README.md
-.gitignore
-- Configuratie en installatie instructies;
+> The Compliments App gives you a random compliment when you click the button.
 
-- Documentatie;
+## Repository description
 
-- Gekende bugs;
+This project is a compliment generator.
 
-- Aanvragen voor toekomstige nieuwe features;
+## Files and folders
 
-- Auteurs;
+- `LICENSE`
+- `README.md`
+- `.gitignore`
 
-- Copyright en licentie.
+## Configuration and installation instructions
 
-- .gitignore
+No configuration or installation instructions are currently available.
 
-- geen .env file in online repo
+## Documentation
+
+No additional documentation is currently available.
+
+## Known bugs
+
+No known bugs are currently listed.
+
+## Future feature requests
+
+No future feature requests are currently listed.
+
+## Authors
+
+just me
+## Copyright and license
+
+See the `LICENSE` file for licensing information.
+
+## `.gitignore`
+
+The `.env` file is excluded from the online repository.
