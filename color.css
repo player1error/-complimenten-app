@@ -3,29 +3,29 @@
 /* parent of nav bar */
 
 .nav-Bar{
-   background-color: blueviolet;
+   background-color: whitesmoke;
    display: flex;
    margin: 40px;
    border-radius: 20px;
+
 }
 
 .nav-Bar h1{
-    padding-left: 30px;
+    padding-left: 40%;
+    text-align: center;
 }
 
 
-.nav-Bar-Links-Config{
-    text-align: right;
-    width: 70%;
-}
 
-.nav-Bar-Links{
-    justify-content: space-between;
-    margin-left: 80px;
-}
+
+
 
 body{
     margin: 0;
+    background-image: url(img/backgrpund-Complemetn-APp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
@@ -33,3 +33,38 @@ main a{
     cursor: pointer;
 }
 
+.compliment-Section{
+    background-color: #8b5cf6;
+    height: 200px;
+    width: 600px;
+    margin-left: 30%;
+    margin-right: 50%;
+    margin-top: 20%;
+    border-radius: 20px;
+
+}
+
+
+.compliment-Section p{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 10%;
+
+}
+
+main button{
+    margin-left: 35%;
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+    background-color: #f472b6;
+    color: #4a2148;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: fantasy;
+
+}

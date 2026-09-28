@@ -18,7 +18,7 @@ This project is a compliment generator.
 
 ## TODO
 
-- Make it pretty
+- Make it reactive
 
 ## Authors
 

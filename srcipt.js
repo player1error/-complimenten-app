@@ -32,6 +32,6 @@ function displayRandomComplint(compliments){
 })();
 
 
-//use display-complimenten-onScreen |  to get the compliment on screen 
+// display-complimenten-onScreen |  to get the compliment on screen 
 
 //complimenten-button | to get the button uimpuict to genorate the complimenten
