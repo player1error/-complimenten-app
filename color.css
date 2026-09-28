@@ -3,8 +3,8 @@
 /* parent of nav bar */
 
 .nav-Bar{
-   background-color: whitesmoke;
-   display: flex;
+
+    display: flex;
    justify-content: center;
    margin: 40px;
    border-radius: 20px;
@@ -55,7 +55,6 @@ main {
 
 .compliment-Section p{
     color: aliceblue;
-    font-weight: bold;
     font-size: xx-large;
     text-align: center;
     padding-top: 10%;
