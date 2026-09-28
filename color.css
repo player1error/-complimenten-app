@@ -1,20 +1,35 @@
-.background{
-    background-color: brown;
+
+
+/* parent of nav bar */
+
+.nav-Bar{
+   background-color: blueviolet;
+   display: flex;
+   margin: 40px;
+   border-radius: 20px;
+}
+
+.nav-Bar h1{
+    padding-left: 30px;
 }
 
 
-.con{
-    margin: 0 auto;
-    width: 1000px;
+.nav-Bar-Links-Config{
+    text-align: right;
+    width: 70%;
 }
 
-.complimenten-button{
-    color: rgb(255, 0, 64);
+.nav-Bar-Links{
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+body{
+    margin: 0;
+}
+
+
+main a{
     cursor: pointer;
-
 }
-
-
-
-
 
