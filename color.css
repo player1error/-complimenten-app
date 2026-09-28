@@ -5,13 +5,14 @@
 .nav-Bar{
    background-color: whitesmoke;
    display: flex;
+   justify-content: center;
    margin: 40px;
    border-radius: 20px;
 
 }
 
 .nav-Bar h1{
-    padding-left: 40%;
+    padding-left: 0;
     text-align: center;
 }
 
@@ -33,13 +34,20 @@ main a{
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20vh;
+}
+
 .compliment-Section{
     background-color: #8b5cf6;
     height: 200px;
     width: 600px;
-    margin-left: 30%;
-    margin-right: 50%;
-    margin-top: 20%;
+    max-width: 90%;
+    margin: 0;
     border-radius: 20px;
 
 }
@@ -55,9 +63,9 @@ main a{
 }
 
 main button{
-    margin-left: 35%;
-    margin-top: 20px;
+    margin: 20px 0 0;
     width: 400px;
+    max-width: 80%;
     height: 100px;
     background-color: #f472b6;
     color: #4a2148;
