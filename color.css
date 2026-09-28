@@ -1,3 +1,13 @@
-.con{
+.background{
     background-color: brown;
+}
+
+
+.con{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.complimenten-button{
+    color: rgb(255, 0, 64);
 }
