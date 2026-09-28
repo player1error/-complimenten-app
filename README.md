@@ -1,46 +1,91 @@
-# What is the Compliments App?
+# Complimenten App
 
-> The Compliments App gives you a random compliment when you click the button.
+A simple web app that shows a random Dutch compliment whenever you press the button.
 
-## Repository description
+## Features
 
-This project is a compliment generator.
+- Generates a random compliment with one click
+- Includes 1,100 Dutch compliments
+- Runs entirely in the browser
+- Uses plain HTML, CSS, and JavaScript with no dependencies or build step
 
-## Files and folders
+## Getting started
 
-- `LICENSE`
-- `README.md`
-- `.gitignore`
+Because the app loads its compliments with `fetch()`, serve the project through a local web server instead of opening `index.html` directly.
 
-## Configuration and installation instructions
+### Requirements
 
-No configuration or installation instructions are currently available.
+- A modern web browser
+- Any local HTTP server
 
-## Documentation
+### Run locally
 
-No additional documentation is currently available.
+1. Clone the repository:
 
-## Known bugs
+   ```bash
+   git clone https://github.com/player1error/-complimenten-app.git complimenten-app
+   cd complimenten-app
+   ```
 
-No known bugs are currently listed.
+2. Start a local server. For example, with Python:
 
-## Future feature requests
+   ```bash
+   python -m http.server 8000
+   ```
 
-No future feature requests are currently listed.
+3. Open [http://localhost:8000](http://localhost:8000) in your browser.
+4. Select **Get compliment** to display a random compliment.
 
-## Authors
+You can also use an editor extension such as Live Server to serve the project.
 
-just me
-## Copyright and license
+## Project structure
 
-See the `LICENSE` file for licensing information.
+```text
+.
+|-- data/
+|   `-- compliments.json  # Collection of Dutch compliments
+|-- color.css             # Page styles
+|-- index.html            # App markup
+|-- srcipt.js             # Compliment loading and selection logic
+|-- LICENSE
+`-- README.md
+```
 
-## `.gitignore`
+> `srcipt.js` is the current filename used by `index.html`; keep both names in sync if you rename it.
 
-The `.env` file is excluded from the online repository.
+## How it works
 
+When the page loads, `srcipt.js` fetches `data/compliments.json`. Clicking the button selects a random entry with `Math.random()` and writes it to the output heading on the page.
 
+## Add or edit compliments
 
-<!-- git add.
-git commit -m"text what did you change"
-git push url -->
+Edit the `compliments` array in `data/compliments.json`:
+
+```json
+{
+  "compliments": [
+    "Je bent geweldig!",
+    "Je maakt de wereld mooier!"
+  ]
+}
+```
+
+Keep the file valid JSON: use double quotes, separate entries with commas, and do not add a trailing comma after the final entry.
+
+## Known limitations
+
+- The navigation links are placeholders and do not lead to separate pages yet.
+- Compliments cannot currently be copied, shared, or saved from the interface.
+- A loading error is not shown in the interface if `compliments.json` cannot be fetched.
+
+## Contributing
+
+Contributions are welcome. Fork the repository, create a branch, make your changes, and open a pull request. When changing the compliment collection, check that `data/compliments.json` remains valid JSON.
+
+## Author
+
+Created by [player1error](https://github.com/player1error).
+
+## License
+
+This project is available under the [MIT License](LICENSE).
