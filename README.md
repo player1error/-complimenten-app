@@ -30,6 +30,6 @@ just me
 See the `LICENSE` file for licensing information.
 
 
-## Your site is live at
+## site is live at
 
 [Open the Compliments App](https://player1error.github.io/-complimenten-app/)
