@@ -8,10 +8,11 @@ This project is a compliment generator.
 
 ## Files and folders
 
-- `data/compliments.json` - contains all the compliments
+- `data/compliments.json` - contains all the compliments and secret compliments
+- `img/backgrpund-Complemetn-APp.png` - contains the background image
 - `color.css` - contains the styling
 - `index.html` - contains the page
-- `srcipt.js` - generates and displays a random compliment
+- `srcipt.js` - generates and displays random and secret compliments
 - `LICENSE` - contains the license
 - `README.md` - contains information about the project
 - `.gitignore` - ignores the `.env` file
