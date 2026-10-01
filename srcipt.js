@@ -4,6 +4,7 @@ async function fechtCompliments(){
     const response = await fetch("./data/compliments.json");
     const data = await response.json();
     return data.compliments;
+    
 }
 // display compliment
 function displayRandomComplint(compliments){
@@ -25,6 +26,8 @@ function displayRandomComplint(compliments){
 (async ()=>{
     // load compliments
     const compliments = await fechtCompliments(); //cammelCasingTwoThree
+    displayRandomComplint(compliments);    //loads a random compliment when you load/reload the site
+
     // load button
 
     const button =  document.getElementById("complimenten-button");    //DOM - document object module
@@ -35,3 +38,24 @@ function displayRandomComplint(compliments){
 // display-complimenten-onScreen |  to get the compliment on screen 
 
 //complimenten-button | to get the button uimpuict to genorate the complimenten
+
+
+
+
+// generate compliment
+async function fechtSecretCompliments(){
+    const response = await fetch("./data/compliments.json");
+    const data = await response.json();
+    return data.secretList;
+    
+}
+
+// call function
+
+(async ()=>{
+    // load secret compliments
+    const secretCompliments = await fechtSecretCompliments();
+
+    const secretComplimentList = document.getElementById("secret-Compliment-List");
+    secretComplimentList.addEventListener("click", ()=>displayRandomComplint(secretCompliments));
+})();
