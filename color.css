@@ -24,7 +24,7 @@
 body{
     margin: 0;
     min-height: 100vh;
-    background-image: url(img/backgrpund-Complemetn-APp.png);
+    background-image: url(img/backgrpund-Complemetn-APp.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -83,6 +83,7 @@ main button{
 
 }
 
+/* medium screens */
 
 @media (max-width: 600px){
     .nav-Bar{
@@ -113,5 +114,38 @@ main button{
         width: 80%;
         height: 80px;
         font-size: large;
+    }
+}
+
+/* small screens */
+
+
+@media (max-width: 400px){
+    .nav-Bar{
+        margin: 15px;
+    }
+
+    .nav-Bar h1{
+        font-size: large;
+    }
+
+    main{
+        padding-top: 5vh;
+    }
+
+    .compliment-Section{
+        width: 90%;
+        min-height: 150px;
+        padding: 15px;
+    }
+
+    .compliment-Section p{
+        font-size: large;
+    }
+
+    main button{
+        width: 90%;
+        height: 70px;
+        font-size: medium;
     }
 }
