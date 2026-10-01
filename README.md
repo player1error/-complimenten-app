@@ -19,7 +19,7 @@ This project is a compliment generator.
 
 ## TODO
 
-- Make it reactive
+- nothing
 
 ## Authors
 

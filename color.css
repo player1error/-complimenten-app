@@ -23,9 +23,11 @@
 
 body{
     margin: 0;
+    min-height: 100vh;
     background-image: url(img/backgrpund-Complemetn-APp.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -49,6 +51,10 @@ main {
     max-width: 90%;
     margin: 0;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 
 }
 
@@ -57,7 +63,7 @@ main {
     color: aliceblue;
     font-size: xx-large;
     text-align: center;
-    padding-top: 10%;
+    margin: 0;
 
 }
 
@@ -75,4 +81,37 @@ main button{
     cursor: pointer;
 
 
+}
+
+
+@media (max-width: 600px){
+    .nav-Bar{
+        margin: 20px;
+    }
+
+    .nav-Bar h1{
+        font-size: x-large;
+    }
+
+    main{
+        padding-top: 10vh;
+    }
+
+    .compliment-Section{
+        width: 90%;
+        min-height: 180px;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .compliment-Section p{
+        font-size: x-large;
+    }
+
+    main button{
+        width: 80%;
+        height: 80px;
+        font-size: large;
+    }
 }
