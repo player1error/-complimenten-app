@@ -82,7 +82,10 @@ main button{
 
 
 }
-
+main button:hover{
+    background-color: #d45a99;
+    color: #242020;
+}
 /* medium screens */
 
 @media (max-width: 600px){
